@@ -3,7 +3,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<div>
   <a href="https://github.com/ShubhamPawar-3333/Classification_of_tomato_plant_disease.git">
   </a>
 
