@@ -1,17 +1,10 @@
 # Classification of Tomato Plant Disease
 
-
-<!-- PROJECT LOGO -->
-<br />
-<div>
-  <a href="https://github.com/ShubhamPawar-3333/Classification_of_tomato_plant_disease.git">
-  </a>
-
-<h2 align="center">Classification of Tomato Plant diseases</h2>
-<p>
-<h3>Tomato Disease Classification</h3>
-
 This project focuses on building a deep learning model for classifying various diseases in tomato plants. The project utilizes TensorFlow and Keras for model development and image data augmentation. Below is a detailed guide on the project structure, data preparation, model building, training, evaluation, and prediction.
+
+## Dataset
+
+Datasets was collected from : PlantVillage datasets = https://www.kaggle.com/datasets/arjuntejaswi/plant-village
 
 ## Project Structure
 
@@ -84,14 +77,3 @@ This project focuses on building a deep learning model for classifying various d
     - The trained model is saved as `tomato_classification.h5`.
 
 Feel free to customize the parameters, architecture, and training settings based on your specific requirements.
-  </p>
-</div>
-
-# Prepare Dataset
-
---- Datasets was collected from :
-
-PlantVillage datasets = https://www.kaggle.com/datasets/arjuntejaswi/plant-village
-
-#
-  
