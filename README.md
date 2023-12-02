@@ -7,7 +7,7 @@
   <a href="https://github.com/ShubhamPawar-3333/Classification_of_tomato_plant_disease.git">
   </a>
 
-<h3 align="center">Classification of Tomato Plant diseases</h3>
+<h2 align="center">Classification of Tomato Plant diseases</h2>
 <p>
     # Tomato Disease Classification
 
