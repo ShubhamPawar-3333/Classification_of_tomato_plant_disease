@@ -1,5 +1,6 @@
 # Classification of Tomato Plant Disease
-
+libraries used: 
+<img src="./images/google-tensorflow-icon.svg" alt="TensorFlow Logo" width="25">  <img src="./images/numpy-1.svg" alt="NumPy Logo" width="25">  <img src="./images/matplotlib-1.svg" alt="Matplotlib Logo" width="25">  <img src="./images/Keras.svg" alt="Keras Logo" width="25">
 ## Dataset
 
 Datasets was collected from Kaggle: [PlantVillage dataset](https://www.kaggle.com/datasets/arjuntejaswi/plant-village)
