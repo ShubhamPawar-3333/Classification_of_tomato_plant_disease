@@ -1,7 +1,5 @@
 # Classification of Tomato Plant Disease
 
-This project focuses on building a deep learning model for classifying various diseases in tomato plants. The project utilizes TensorFlow and Keras for model development and image data augmentation. Below is a detailed guide on the project structure, data preparation, model building, training, evaluation, and prediction.
-
 ## Dataset
 
 Datasets was collected from Kaggle: [PlantVillage dataset](https://www.kaggle.com/datasets/arjuntejaswi/plant-village)
@@ -10,7 +8,7 @@ Datasets was collected from Kaggle: [PlantVillage dataset](https://www.kaggle.co
 The motivation behind this project is to create a deep learning model capable of classifying different diseases affecting tomato plants. By leveraging convolutional neural networks (CNNs), the aim is to assist farmers in identifying and addressing plant diseases early, thereby enhancing crop yield.
 
 ### Project Description
-This project utilizes TensorFlow and Keras to build a CNN-based model for classifying various diseases in tomato plants. The dataset includes images of tomato plants with annotations for different disease categories. The model is trained, validated, and tested on these datasets to achieve accurate disease classification.
+This project focuses on building a deep learning model for classifying various diseases in tomato plants. The project utilizes TensorFlow and Keras for model development and image data augmentation. Below is a detailed guide on the project structure, data preparation, model building, training, evaluation, and prediction.
 
 ### Problem Statement
 Plant diseases can significantly impact crop yield, and early detection is crucial for effective management. This project addresses the challenge of timely and accurate identification of diseases in tomato plants using machine learning.
