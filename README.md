@@ -8,11 +8,7 @@
   </a>
 
 <h3 align="center">Classification of Tomato Plant diseases</h3>
-
-  <p align="center">
-    This project deals with the development of machine learning model based on Convolution Neural Network (CNN) for classifying the disease on tomato plants.
-  </p>
-  <p>
+<p>
     # Tomato Disease Classification
 
 This project focuses on building a deep learning model for classifying various diseases in tomato plants. The project utilizes TensorFlow and Keras for model development and image data augmentation. Below is a detailed guide on the project structure, data preparation, model building, training, evaluation, and prediction.
