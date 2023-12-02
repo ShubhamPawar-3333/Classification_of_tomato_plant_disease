@@ -9,7 +9,7 @@
 
 <h2 align="center">Classification of Tomato Plant diseases</h2>
 <p>
-    # Tomato Disease Classification
+<h3>Tomato Disease Classification</h3>
 
 This project focuses on building a deep learning model for classifying various diseases in tomato plants. The project utilizes TensorFlow and Keras for model development and image data augmentation. Below is a detailed guide on the project structure, data preparation, model building, training, evaluation, and prediction.
 
