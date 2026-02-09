@@ -1,1 +1,54 @@
-# Configuration
+# Tomato Disease Advisory System - Hyperparameters
+
+# Data parameters
+IMAGE_SIZE: 224
+BATCH_SIZE: 32
+VALIDATION_SPLIT: 0.2
+
+# Training parameters
+EPOCHS: 20
+LEARNING_RATE: 0.0001
+EARLY_STOPPING_PATIENCE: 5
+REDUCE_LR_PATIENCE: 3
+REDUCE_LR_FACTOR: 0.5
+
+# Data augmentation
+AUGMENTATION:
+  rotation_range: 20
+  width_shift_range: 0.2
+  height_shift_range: 0.2
+  horizontal_flip: true
+  vertical_flip: false
+  zoom_range: 0.2
+  fill_mode: nearest
+
+# Model parameters
+DROPOUT_RATE: 0.3
+DENSE_UNITS: 256
+FREEZE_LAYERS: true  # Freeze base model layers initially
+
+# GradCAM parameters
+GRADCAM:
+  layer_name: top_conv  # Last conv layer for EfficientNet
+  colormap: jet
+
+# Severity thresholds (% of affected area)
+SEVERITY:
+  mild_threshold: 10
+  moderate_threshold: 30
+  # Above moderate_threshold = severe
+
+# Confidence thresholds
+CONFIDENCE:
+  abstention_threshold: 0.70  # Abstain if confidence < 70%
+  warning_threshold: 0.85     # Show warning if confidence < 85%
+
+# RAG parameters
+RAG:
+  temperature: 0.3
+  max_tokens: 1024
+  
+# MLflow tracking
+MLFLOW:
+  experiment_name: tomato-disease-classification
+  tracking_uri: mlruns
