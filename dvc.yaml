@@ -18,7 +18,6 @@ stages:
       - config/config.yaml
     params:
       - IMAGE_SIZE
-      - model.weights
     outs:
       - artifacts/prepare_base_model
 

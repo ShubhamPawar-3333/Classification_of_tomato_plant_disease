@@ -50,7 +50,7 @@ class_names:
 
 # RAG configuration
 rag:
-  embedding_model: allenai/scibert_scivocab_uncased
+  embedding_model: all-MiniLM-L6-v2
   llm_model: llama-3.3-70b-versatile
   llm_provider: groq
   chunk_size: 1000

@@ -127,7 +127,7 @@ def predict(image):
     if image is None:
         return (
             "⚠️ Please upload an image.",
-            None, None, None,
+            None, None,
             "Upload an image to get started.",
         )
 
