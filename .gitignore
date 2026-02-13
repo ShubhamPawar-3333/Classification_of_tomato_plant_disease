@@ -94,3 +94,5 @@ dataset/
 # Old notebook (replaced by new structure)
 Classification_of_tomato_plant_wrt_disease.ipynb
 tomato_classification.h5
+Results of v2/model.keras
+artifacts/training/model.keras

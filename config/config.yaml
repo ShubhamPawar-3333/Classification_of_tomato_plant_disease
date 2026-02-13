@@ -29,7 +29,7 @@ vectorstore:
 
 # Model configuration
 model:
-  name: EfficientNetB4
+  name: EfficientNet  # Variant (B0/B4) selected dynamically based on IMAGE_SIZE
   weights: imagenet
   include_top: false
   input_shape: [224, 224, 3]
