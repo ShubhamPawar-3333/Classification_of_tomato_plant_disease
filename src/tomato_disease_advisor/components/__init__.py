@@ -5,3 +5,5 @@ from tomato_disease_advisor.components.data_ingestion import DataIngestion
 from tomato_disease_advisor.components.prepare_base_model import PrepareBaseModel
 from tomato_disease_advisor.components.model_training import ModelTrainer
 from tomato_disease_advisor.components.model_evaluation import ModelEvaluation
+from tomato_disease_advisor.components.explainer import GradCAMExplainer
+from tomato_disease_advisor.components.severity import SeverityEstimator
