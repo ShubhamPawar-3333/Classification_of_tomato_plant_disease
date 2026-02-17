@@ -4,7 +4,7 @@
 #  Port: 7860 (Gradio default)
 # ─────────────────────────────────────────────────────────────
 
-FROM python:3.10-slim
+FROM python:3.13-slim
 
 # ── System deps ──────────────────────────────────────────────
 RUN apt-get update && apt-get install -y --no-install-recommends \
