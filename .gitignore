@@ -98,3 +98,4 @@ Results of v2/model.keras
 artifacts/training/model.keras
 agricultural-disease-advisory-system/
 hf-space/
+.deploy_hashes.json
