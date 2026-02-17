@@ -1,4 +1,4 @@
-# 🍅 Tomato Disease Advisory System
+# 🍅 Agricultural Disease Diagnosis and Advisory System — Tomato Crops
 
 > **AI-powered tomato leaf disease diagnosis** with GradCAM++ explainability, severity estimation, and RAG-powered treatment advisories.
 

@@ -19,7 +19,7 @@ metrics:
   - recall
 ---
 
-# 🍅 Tomato Disease Classification — EfficientNetB0
+# 🍅 Agricultural Disease Diagnosis and Advisory System — Tomato Crops
 
 ## Model Description
 

@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────
-#  Dockerfile — Tomato Disease Advisory System
+#  Dockerfile — Agricultural Disease Diagnosis and Advisory System
 #  Target: HuggingFace Spaces (Docker SDK)
 #  Port: 7860 (Gradio default)
 # ─────────────────────────────────────────────────────────────

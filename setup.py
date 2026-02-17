@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="tomato_disease_advisor",
     version="1.0.0",
-    description="Tomato Disease Advisory System with AI-powered diagnosis",
+    description="Agricultural Disease Diagnosis and Advisory System — Tomato Crops",
     author="Shubham Pawar",
     package_dir={"": "src"},
     packages=find_packages(where="src"),

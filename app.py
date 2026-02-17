@@ -347,7 +347,7 @@ def build_app() -> gr.Blocks:
         # ── Header ──
         gr.HTML("""
             <div style="text-align:center; padding: 20px 0 10px 0;">
-                <h1 class="main-title">🍅 Tomato Disease Advisory System</h1>
+                <h1 class="main-title">🍅 Agricultural Disease Diagnosis & Advisory System</h1>
                 <p class="subtitle">
                     Upload a tomato leaf photo for instant AI-powered disease diagnosis,
                     visual explanation, severity assessment, and treatment advice.
