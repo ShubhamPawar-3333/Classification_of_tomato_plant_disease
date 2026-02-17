@@ -1,6 +1,7 @@
 # ─────────────────────────────────────────────────────────────
 #  Sync GitHub → HuggingFace Spaces
 #  Triggers on every push to master
+#  Uses huggingface-cli upload (handles binary files natively)
 # ─────────────────────────────────────────────────────────────
 name: Sync to HuggingFace Spaces
 
@@ -19,9 +20,22 @@ jobs:
           fetch-depth: 0
           lfs: true
 
-      - name: Push to HuggingFace Space
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install HuggingFace CLI
+        run: pip install huggingface_hub[cli]
+
+      - name: Upload to HuggingFace Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git remote add hf https://AIenthusSP:${HF_TOKEN}@huggingface.co/spaces/AIenthusSP/agricultural-disease-advisory-system || true
-          git push hf master:main --force
+          # Upload the entire repo (excluding .git and artifacts tracked separately)
+          huggingface-cli upload AIenthusSP/agricultural-disease-advisory-system \
+            . . \
+            --repo-type space \
+            --token "${HF_TOKEN}" \
+            --exclude ".git/*" "agricultural-disease-advisory-system/*" "hf-space/*" \
+            --commit-message "Sync from GitHub: ${{ github.sha }}"
