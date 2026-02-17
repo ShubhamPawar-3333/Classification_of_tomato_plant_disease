@@ -1,0 +1,51 @@
+# Version control
+.git
+.gitignore
+.dvc
+
+# Virtual environments
+.venv
+venv
+
+# Dataset (downloaded at runtime via DVC)
+dataset/
+Tomato_disease_catagories/
+
+# Jupyter
+.ipynb_checkpoints/
+research/
+*.ipynb
+
+# IDE / OS
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# Build artifacts not needed in container
+*.egg-info/
+.pytest_cache/
+mlruns/
+logs/
+outputs/
+*.h5
+
+# Docs (not needed at runtime)
+docs/
+MODEL_CARD.md
+CHANGELOG.md
+README.md
+LICENSE
+
+# CI/CD
+.github/
+
+# Deployment scripts (not needed in container)
+scripts/
+template.py
+.deploy_hashes.json
+
+# Tests (not needed in production)
+tests/

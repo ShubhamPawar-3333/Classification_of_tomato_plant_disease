@@ -64,8 +64,8 @@ artifacts/vectorstore/
 mlruns/
 
 # Output files
-outputs/*.pdf
-outputs/*.png
+outputs/
+images/
 
 # OS files
 .DS_Store
