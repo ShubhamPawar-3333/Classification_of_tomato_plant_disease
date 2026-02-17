@@ -24,7 +24,7 @@ def main():
     parser.add_argument(
         "--repo-id",
         type=str,
-        default="ShubhamPawar-3333/tomato-disease-efficientnet",
+        default="ShubhamPawar-3333/agricultural-disease-advisory-system",
         help="HuggingFace Hub repo ID (user/repo)",
     )
     parser.add_argument(

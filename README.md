@@ -81,8 +81,8 @@ Upload a tomato leaf photo → get:
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/ShubhamPawar-3333/Classification_of_tomato_plant_disease.git
-cd Classification_of_tomato_plant_disease
+git clone https://github.com/ShubhamPawar-3333/agricultural-disease-advisory-system.git
+cd agricultural-disease-advisory-system
 python -m venv .venv && .venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 pip install -e .

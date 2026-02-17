@@ -23,5 +23,5 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git remote add hf https://ShubhamPawar-3333:${HF_TOKEN}@huggingface.co/spaces/ShubhamPawar-3333/tomato-disease-advisor || true
+          git remote add hf https://ShubhamPawar-3333:${HF_TOKEN}@huggingface.co/spaces/ShubhamPawar-3333/agricultural-disease-advisory-system || true
           git push hf master:main --force
