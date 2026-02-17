@@ -33,5 +33,5 @@ jobs:
         run: |
           python scripts/upload_model_to_hf.py \
             --model-path "${{ github.event.inputs.model_path }}" \
-            --repo-id "ShubhamPawar-3333/agricultural-disease-advisory-system" \
+            --repo-id "AIenthusSP/agricultural-disease-advisory-system" \
             --token "${HF_TOKEN}"
