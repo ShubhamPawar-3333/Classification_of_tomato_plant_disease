@@ -150,11 +150,16 @@ class GradCAMExplainer:
         # Forward pass with gradient tape
         with tf.GradientTape(persistent=True) as tape:
             conv_output, predictions = grad_model(image, training=False)
+            # Normalize predictions output (fix for list outputs)
+            if isinstance(predictions, (list, tuple)):
+                predictions = predictions[0]
 
             if class_idx is None:
-                class_idx = tf.argmax(predictions[0])
+                class_idx = tf.argmax(predictions[0]).numpy()
 
-            class_score = predictions[:, class_idx]
+            print("TYPE:", type(predictions))
+
+            class_score = tf.gather(predictions, class_idx, axis=1)
 
         # First-order gradients
         grads = tape.gradient(class_score, conv_output)

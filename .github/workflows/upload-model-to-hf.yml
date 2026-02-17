@@ -1,0 +1,37 @@
+# ─────────────────────────────────────────────────────────────
+#  Upload trained model to HuggingFace Hub
+#  Trigger: manual (workflow_dispatch) after training
+# ─────────────────────────────────────────────────────────────
+name: Upload Model to HuggingFace Hub
+
+on:
+  workflow_dispatch:
+    inputs:
+      model_path:
+        description: "Path to model file"
+        default: "artifacts/training/model.keras"
+        required: true
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install huggingface_hub
+
+      - name: Upload model to Hub
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python scripts/upload_model_to_hf.py \
+            --model-path "${{ github.event.inputs.model_path }}" \
+            --repo-id "ShubhamPawar-3333/tomato-disease-efficientnet" \
+            --token "${HF_TOKEN}"

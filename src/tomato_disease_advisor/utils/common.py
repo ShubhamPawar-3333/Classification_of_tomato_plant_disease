@@ -67,7 +67,7 @@ def save_json(path: Path, data: dict) -> None:
         json.dump(data, f, indent=4)
 
 
-@ensure_annotations
+# @ensure_annotations
 def create_directories(path_to_directories: list, verbose: bool = True) -> None:
     """
     Create a list of directories.

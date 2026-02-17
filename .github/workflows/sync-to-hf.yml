@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────────────────────
+#  Sync GitHub → HuggingFace Spaces
+#  Triggers on every push to master
+# ─────────────────────────────────────────────────────────────
+name: Sync to HuggingFace Spaces
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      - name: Push to HuggingFace Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git remote add hf https://ShubhamPawar-3333:${HF_TOKEN}@huggingface.co/spaces/ShubhamPawar-3333/tomato-disease-advisor || true
+          git push hf master:main --force
